@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+          <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+          <title>Bootstrap Example</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+       <title>portfolio</title>
+       <link rel="stylesheet" href="exercise2.css">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+       <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+
+      <script>
+        AOS.init();
+      </script>
+
+      <!-------------------------------------------------navbar------------------------------------------------------------->
+          <nav class="navbar navbar-expand-lg sticky-top " style="background-color: white;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="image\logo.png" alt="" style="width:75%">
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="input-group mb-3" style="width: 350px;">
+                <input type="text" class="form-control" placeholder="Search cources..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-success" type="button" id="button-addon2">
+                  <img src="image\search (1).svg" alt="">
+                </button>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                
+                  <li class="nav-item dropdown ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <strong>Home</strong>   
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home Main</a></li>
+                      <li><a class="dropdown-item" href="#">Training School</a></li>
+                      <li><a class="dropdown-item" href="#">Home Business</a></li>
+                      <li><a class="dropdown-item" href="#">Online Tutor</a></li>
+                      <li><a class="dropdown-item" href="#">Fitness Coach</a></li>
+                      <li><a class="dropdown-item" href="#">Home Education</a></li>
+                      <li><a class="dropdown-item" href="#">Home Personal</a></li>
+                      <li><a class="dropdown-item" href="#">Home Courses</a></li>
+                      <li><a class="dropdown-item" href="#">Home Mentor</a></li>
+                      <li><a class="dropdown-item" href="#">Language School</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong> Pages</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                      <li><a class="dropdown-item" href="#">About us</a></li>               
+                      <li><a class="dropdown-item" href="#">Start Here 1</a></li>
+                      <li><a class="dropdown-item" href="#">Start Here 2 </a></li>
+                      <li><a class="dropdown-item" href="#">Start Here 3</a></li>                                            
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>  Cources</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Cources Grid</a></li>
+                      <li><a class="dropdown-item" href="#">Cources Style 2 </a></li>   
+                      <li><a class="dropdown-item" href="#">Cources Style 3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Teacher Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Single Paid Cources</a></li>
+                      <li><a class="dropdown-item" href="#">Single Free Cources</a></li>
+                      <li><a class="dropdown-item" href="#">Become a Teacher</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong> Blog</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Blog Main</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 2 Column</a></li>                      
+                      <li><a class="dropdown-item" href="#">Blog 3 Column</a></li>                      
+                      <li><a class="dropdown-item" href="#">Blog Layout 2</a></li>                      
+                      <li><a class="dropdown-item" href="#">Blog Classic</a></li>                      
+                      <li><a class="dropdown-item" href="#">Blog Detail</a></li>                      
+                    
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>  Shop</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Shop</a></li>
+                      <li><a class="dropdown-item" href="#">Cart</a></li>
+                      <li><a class="dropdown-item" href="#">My account</a></li>
+                      <li><a class="dropdown-item" href="#">Checkout</a></li>                   
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>  Contact </strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                      <li><a class="dropdown-item" href="#">Contact 2</a></li>                      
+                      <li><a class="dropdown-item" href="#">Contact 3</a></li>
+                      <li><a class="dropdown-item" href="#">Contact 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mx-3 ">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="image\shopping-bag (1).svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+<!---------------------------------------------------------------image--- write----------------------------------------------------->
+ 
+
+ <div class=""><!--containerfluid removed to fic right to left-->
+  <div class="card">
+    <img src="image\bg1.jpg" class="card-img" alt="demo" >
+    <div class="card-img-overlay">
+      <div class="card-body text-light"><br><br>
+        <br><br><br>
+        <p class="card-title  font-weight-bolder fw-bold ms-5" style="font-size: 20px;">LIFEBUILDING EDUCATION</p><br>
+     <p class="card-subtitle display-5 font-weight-light w-50 fw-bold ms-5" style="font-size:50px; line-height: 60px;" > <strong>More Than 25K+ <br>
+      Edu Courses Online </strong></p><br>
+     <p class="card-text w-50 ms-5" style="font-size: 20px;">Choose from over 250,000 online video courses with new <br>additions  published every month, high quality courses. </p> <br>
+
+    <div class="row">
+      <div class="col-2">
+     <a href="#" class="btn ms-5 " style=" background-color: #20ad95; color: white; width: 100%;" role="button">Get Started Now <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+<div class="col">
+
+   <p class="ms-0 ms-5 ">
+    <button class="btn  px-4 py-3 bg-white ms-4" style="border-radius: 100px">
+            <i class="fa fa-play"></i>
+ </button>
+ 
+  </p>
+  </div>
+  </div>
+    </div>
+    </div>
+  </div>
+ </div>
+         
+<!-------------------------------------------------------------------------close---------------------------------------------------->
+
+
+
+<!------------------------------------------------------------------Coach Online Courses---------------------------------------------------------------->
+  <div class="container">
+<div class=" mb-3" style="max-width: 1500px;"><!---card removed-->
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="image\online mentor.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body"><br><br><br><br><br>
+        <h5 class="card-title w-50" style="font-size: 30px; color:black;"><strong>Coach Online Courses & LMS Education WordPress Theme</strong></h5><br>
+        <p class="card-text">Get best rated theme for Coach Online Courses & LMS Education WordPress. Start Your Professional WP Coaching Site Now! Let’s Create Something new and awesome Togeather. High Performance WordPress Theme. Let’s Create Something new and awesome Togeather & Best Services.</p>
+        <p class="card-text"><small class="text-body-secondary">
+          <img src="image\arrow-right-circle (1).svg" alt="">
+          High Quality Education Video</small></p>
+        <p class="card-text"><small class="text-body-secondary">
+          <img src="image\arrow-right-circle (1).svg" alt="">
+          You can learn anything online</small></p>
+        <p class="card-text"><small class="text-body-secondary">
+          <img src="image\arrow-right-circle (1).svg" alt="">
+          We list your options by state</small></p>
+
+
+          <div class="row">
+            <div class="col-2">
+          <button type="button" class="btn btn-success" style="width: 100%;">Start Here</button>
+          </div>
+    <div class="col">
+
+   <p class="ms-2">
+    <a href="">
+      <button type="button" class="btn btn-light " style="width: 30%; color: #20ad95;;">Learn From</button></a>
+  </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+ <!-----------------------------------------------------------------close------------------------------------------------------>
+
+
+ <!-----------------------------------------------------------------CARDS1-------------href call in csss=fontawsome.css---------------------------------------->
+
+
+<div class="container" style="background-color:white;">
+ <div class="row " >
+  <div class="col-sm-6 ">
+    <h5 class="fw-bold " style="font-size: 30px; color: #403b66;;">Explore Popular Courses</h5>
+</div>
+
+<div class="col-sm-6  text-end">
+
+<button type="button" class="btn btn-outline-success">More
+  <img src="image\arrow-right-circle (3).svg" alt="">
+</button>
+
+</div>
+</div> <br>
+
+
+  <div class="row">
+<div class="col-sm-4">
+<div class="card" style="width: 21rem;">
+  <div class="inner">
+  <img src="image\angular.jpg" class="card-img-top" alt="...">
+  </div>
+  <h5 style="color:green" class="m-3"><strong>$99.00</strong></h5>
+  <div class="card-body">
+   
+    <p class="card-text" style="font-size: 20px;"> <strong> Visual Basic Web Course With Live Project</strong></p>
+<div class=" grid text-center">
+  <div>
+    <img src="https://www.shutterstock.com/image-vector/five-stars-quality-sign-vector-260nw-1355114522.jpg" alt="" style="width: 70px;">
+  </div>
+  <div>
+    <p class="text-end">(1rating)</p>
+  </div>
+</div>
+<div class="d-flex ">
+  <div class="me-5">
+    <img src="image\calender.svg" alt="" style="width: 20%;">
+    Lessons 5</div>
+  <div class="me-5">
+    <img src="image\user.svg" alt="" style="width: 20%;">
+    
+    61 Student</div>
+  
+</div><br>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4">
+  <div class="card" style="width: 21rem;">
+    <div class="inner">
+    <img src="image\wordpress.jpg" class="card-img-top" alt="...">
+    </div>
+    <h5 style="color:green" class="m-3"><strong>$79.00</strong></h5>
+    <div class="card-body">
+      <p class="card-text" style="font-size: 20px;"> <strong> Become the PHP Master faster with Vultur</strong></p>
+      <div class=" grid text-center">
+        <div>
+          <img src="https://www.shutterstock.com/image-vector/five-stars-quality-sign-vector-260nw-1355114522.jpg" alt="" style="width: 70px;">
+        </div>
+        <div>
+          <p class="text-end"> Rating</p>
+        </div>
+      </div>
+      <div class="d-flex ">
+        <div class="me-5">
+          <img src="image\calender.svg" alt="" style="width: 20%;">
+          Lessons 5</div>
+        <div class="me-5">
+          <img src="image\user.svg" alt="" style="width: 20%;">
+          
+          70 Student</div>
+        
+      </div><br>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card" style="width: 21rem;">
+      <div class="inner">
+      <img src="image\animarion.jpg" class="card-img-top" alt="...">
+      </div>
+      <h5 style="color:green" class="m-3"><strong>$89.00</strong></h5>
+      <div class="card-body">
+        <p class="card-text" style="font-size: 20px;"> <strong>The Complete SQL Data Coaching Course</strong></p>
+        <div class=" grid text-center">
+          <div>
+            <img src="https://www.shutterstock.com/image-vector/five-stars-quality-sign-vector-260nw-1355114522.jpg" alt="" style="width: 70px;">
+          </div>
+          <div>
+            <p class="text-end"> Rating</p>
+          </div>
+        </div>
+        <div class="d-flex ">
+          <div class="me-5">
+            <img src="image\calender.svg" alt="" style="width: 20%;">
+            Lessons 5</div>
+          <div class="me-5">
+            <img src="image\user.svg" alt="" style="width: 20%;">
+            
+            62 Student</div>
+          
+        </div><br>
+      </div>
+    </div>
+    </div>
+</div> <br>
+<!---------------------------------------------------card2---------------------------------------------------------------------------------------->
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card" style="width:21rem;">
+      <div class="inner">
+      <img src="image\VUEMASTER.jpg" class="card-img-top" alt="...">
+    </div>
+      <h5 style="color:green" class="m-3"><strong>$39.00</strong></h5>
+      <div class="card-body">
+        <p class="card-text" style="font-size: 20px;"> <strong> Become the Vue Master faster with Vultur</strong></p>
+        <div class=" grid text-center">
+          <div>
+            <img src="https://www.shutterstock.com/image-vector/five-stars-quality-sign-vector-260nw-1355114522.jpg" alt="" style="width: 70px;">
+          </div>
+          <div>
+            <p class="text-end"> Rating</p>
+          </div>
+        </div>
+        <div class="d-flex ">
+          <div class="me-5">
+            <img src="image\calender.svg" alt="" style="width: 20%;">
+            Lessons 5</div>
+          <div class="me-5">
+            <img src="image\user.svg" alt="" style="width: 20%;">
+            
+            61 Student</div>
+          
+        </div><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card" style="width:21rem;">
+      <div class="inner">
+      <img src="image\NETWORK.jpg" class="card-img-top" alt="...">
+      </div>
+      <h5 style="color:green" class="m-3">Free</h5>
+      <div class="card-body">
+        <p class="card-text" style="font-size: 20px;"> <strong>Introduction to network coaching course</strong></p>
+        <div class=" grid text-center">
+          <div>
+            <img src="https://www.shutterstock.com/image-vector/five-stars-quality-sign-vector-260nw-1355114522.jpg" alt="" style="width: 70px;">
+          </div>
+          <div>
+            <p class="text-end"> Rating</p>
+          </div>
+        </div>
+        <div class="d-flex ">
+          <div class="me-5">
+            <img src="image\calender.svg" alt="" style="width: 20%;">
+            Lessons 5</div>
+          <div class="me-5">
+            <img src="image\user.svg" alt="" style="width: 20%;">
+            
+            17 Student</div>
+          
+        </div><br>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card" style="width:21rem;">
+      <div class="inner">
+      <img src="image\PYTHON.jpg" class="card-img-top" alt="...">
+
+</div>
+      <h5 style="color:green" class="m-3"><strong>$17.99</strong></h5>
+      <div class="card-body">
+        <p class="card-text" style="font-size: 20px;"> <strong>Learn Python Interactive Tutorial Online</strong></p>
+        <div class=" grid text-center">
+          <div>
+            <img src="https://www.shutterstock.com/image-vector/five-stars-quality-sign-vector-260nw-1355114522.jpg" alt="" style="width: 70px;">
+          </div>
+          <div>
+            <p class="text-end"> Rating</p>
+          </div>
+        </div>
+        <div class="d-flex ">
+          <div class="me-5">
+            <img src="image\calender.svg" alt="" style="width: 20%;">
+            Lessons 5</div>
+          <div class="me-5">
+            <img src="image\user.svg" alt="" style="width: 20%;">
+            
+           50 Student</div>
+          
+        </div><br>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div><br>
+<!---------------------------------------------------END------------------------------------------------------------------------------------------->
+       
+<div class="container-fluid text-center" style="padding: 110px;">
+  <h1>Popular Courses Categories</h1>
+  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium totam <br> rem doloremque laudantium,
+  totam rem
+  aperiam, eaque ipsa natus error sit.
+
+  <div class="row" style="margin-top: 50px;">
+      <div class="col">
+          <div class="card text-bg-dark">
+            <div data-aos="fade-down">
+              <img src="http://vultur.drozd.at/wp-content/uploads/2020/05/1.jpg" height="280px" class="card-img"
+                  style="filter: brightness(50%);object-fit: cover;" alt="...">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                  <h3> <div style="width: 65px;height: 65px;border-radius: 100px;background-color: #00000085;"
+                          class="mx-auto">
+                          <i class="fa fa-paper-plane-o mt-3"></i>
+                      </div><br>Coding</h3>
+              </div>
+          </div>
+      </div></div>
+
+      <div class="col">
+          <div class="card text-bg-dark">
+            <div data-aos="fade-right">
+              <img src="http://vultur.drozd.at/wp-content/uploads/2020/05/2.jpg" height="280px" class="card-img"
+                  style="filter: brightness(50%);object-fit: cover;" alt="...">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                  <h3> <div style="width: 65px;height: 65px;border-radius: 100px;background-color: #00000085;"
+                          class="mx-auto">
+                          <i class="fa fa-amazon mt-3"></i>
+                      </div><br>Creative</h3>
+              </div>
+          </div>
+      </div></div>
+      <div class="col">
+          <div class="card text-bg-dark">
+            <div data-aos="fade-left">
+              <img src="http://vultur.drozd.at/wp-content/uploads/2020/05/3.jpg" height="280px" class="card-img"
+                  style="filter: brightness(50%);object-fit: cover;" alt="...">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                  <h3> <div style="width: 65px;height: 65px;border-radius: 100px;background-color: #00000085;"
+                          class="mx-auto">
+                          <i class="fa fa-book mt-3"></i>
+                      </div><br>Business</h3>
+              </div>
+          </div>
+      </div></div>
+      <div class="col">
+          <div class="card text-bg-dark">
+            <div data-aos="fade-up-left">
+              <img src="http://vultur.drozd.at/wp-content/uploads/2020/05/4.jpg" height="280px" class="card-img"
+                  style="filter: brightness(50%);object-fit: cover;" alt="...">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                  <h3> <div style="width: 65px;height: 65px;border-radius: 100px;background-color: #00000085;"
+                          class="mx-auto">
+                          <i class="fa fa-bar-chart mt-3"></i>
+                      </div><br>Technology</h3>
+              </div>
+          </div>
+      </div>
+  </div></div>
+  <div class="row mt-4">
+      <div class="col">
+          <div class="card text-bg-dark">
+         
+            <div data-aos="flip-left">          
+              <img src="http://vultur.drozd.at/wp-content/uploads/2020/05/5.jpg" height="280px" class="card-img"
+                  style="filter: brightness(50%);object-fit: cover;" alt="...">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                  <h3>
+                      <div style="width: 65px;height: 65px;border-radius: 100px;background-color: #00000085;"
+                          class="mx-auto">
+                          <i class="fa fa-cloud-download mt-3"></i>
+                      </div><br>Photography
+                  </h3>
+              </div>
+          </div>
+      </div></div>
+      <div class="col">
+          <div class="card text-bg-dark">
+            <div data-aos="flip-right">
+              <img src="http://vultur.drozd.at/wp-content/uploads/2020/05/6.jpg" height="280px" class="card-img"
+                  style="filter: brightness(50%);object-fit: cover;" alt="...">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                  <h3> <div style="width: 65px;height: 65px;border-radius: 100px;background-color: #00000085;"
+                          class="mx-auto">
+                          <i class="fa fa-camera-retro mt-3"></i>
+                      </div><br>IT & Software</h3>
+              </div>
+          </div>
+      </div></div>
+      <div class="col">
+          <div class="card text-bg-dark">
+            <div data-aos="zoom-in">
+              <img src="http://vultur.drozd.at/wp-content/uploads/2020/05/7.jpg" height="280px" class="card-img"
+                  style="filter: brightness(50%);object-fit: cover;" alt="...">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                  <h3> <div style="width: 65px;height: 65px;border-radius: 100px;background-color: #00000085;"
+                          class="mx-auto">
+                          <i class="fa fa-amazon mt-3"></i>
+                      </div><br>Creative</h3>
+              </div>
+          </div>
+      </div></div>
+      <div class="col">
+          <div class="card text-bg-dark">
+            <div data-aos="flip-up">
+              <img src="http://vultur.drozd.at/wp-content/uploads/2020/05/8.jpg" height="280px" class="card-img"
+                  style="filter: brightness(50%);object-fit: cover;" alt="...">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                  <h3> <div style="width: 65px;height: 65px;border-radius: 100px;background-color: #00000085;"
+                          class="mx-auto">
+                          <i class="fa fa-paper-plane-o mt-3"></i>
+                      </div><br>Coding</h3>
+              </div>
+          </div>
+      </div>
+   </div>
+</div></div>
+
+
+
+
+|<!-------------------------------------------------end------------------------------------------------------------------>
+
+
+<div class=""><!--containerfluid removed to fic right to left-->
+  <div class="card">
+    <img src="image\joinnetwork.jpg" class="card-img" alt="demo" >
+    <div class="card-img-overlay">
+      <div class="card-body text-light"><br><br>
+        <br><br><br>
+        <p class="card-title  font-weight-bolder text-center" style="font-size: 30px;"><strong>Start Growing With Community & Experience Endless Possibilities</strong></p><br>
+     
+     <p class="card-text  text-center" style="font-size: 20px;">and get started with a free 1 month trial for your business</p> <br>
+
+      <div class="text-center">
+        <button type="button" class="btn btn-primary  " style="background-color: #20ad95;;" >Join The Network
+        <img src="image\arrowwhite.svg" alt="">
+        </button>
+      </div>
+  </div>
+    </div>
+    </div>
+  </div>
+ </div><br><br>
+<!-------------------------------------------------------------------------------------over------------------------------------------------------------>
+ 
+<div class="container">
+<div class="row">
+  <div class="col-sm-6">
+    <p class="fw-medium" style="color: #8c89a1 ;" >LEARN SOMETHING NEW</p>
+    <h3 class=" fw-bold " style="color: #403b66; font-size: 30px; line-height: 40px;">Learn from any location in <br> the world with Vultur Edu</h3><br>
+    <h5 class="fw-light">Duis consectetur feugiat auctor. Morbi nec enim luctus, feugiat arcu id, ultricies ante. Duis vel massa eleifend, porta est non.</h5>
+  </div>
+
+  
+<div class="col-sm-4 text-end m-3 ms-5">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-6 col-sm-3 mx-5 mb-5"style="font-size: 300%; "> <strong>647</strong> <p  class="fw-bolder"  style="font-size:15px ; color:#403b66 ; "> <strong>AWARDS</strong></p> </div>
+      <div class="col-6 col-sm-3 mx-5 mb-5"style="font-size: 300%; "> <strong>369</strong> <p  class="fw-bolder"  style="font-size:15px ; color:#403b66 ; "> <strong>Certified_TEACHERS</strong></p> </div>
+  
+      <!-- Force next columns to break to new line -->
+      <div class="w-100"></div>
+  
+      <div class="col-6 col-sm-3 mx-5" style="font-size: 300%;"><strong> 104 </strong>  <p class="fw-bolder" style="font-size: 15px ; color:#403b66;"> <strong>STUDENTS</strong></p></div>
+      <div class="col-6 col-sm-3 mx-5" style="font-size: 300%;"><strong> 874 </strong>  <p class="fw-bolder" style="font-size: 15px ; color:#403b66;"> <strong>COMPLETE_COURSES</strong></p></div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div> <br>
+
+<!---------------------------------------------------------over--------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------------Meet Our International Teachers-------------------------------------------------------------------------------------->
+
+
+<div class="container">
+  <p class="fw-bolder text-center mt-4" style="font-size: 30px; line-height: 40px;">Meet Our International Teachers</p>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card mb-3">
+        <div class="inner">
+        <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team02.jpg" class="card-img-top" alt="Image 1"></div>
+        <div class="card-body">
+          <h4 class="card-title">Loan Drod</h4>
+          <h6 class="card-title" style="color: #20ad95;">Photoshop</h6>
+
+          <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3">
+        <div class="inner">
+        <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team04.jpg" class="card-img-top" alt="Image 2"></div>
+        <div class="card-body">
+          <h5 class="card-title">loan Drozd</h5>
+          <h6 class="card-title" style="color: #20ad95;">IT & SoftWare</h6>
+
+          <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3">
+        <div class="inner">
+          <div class="inner">
+        <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team07.jpg" class="card-img-top" alt="Image 3"></div>
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">loan Drozd</h5>
+          <h6 class="card-title" style="color: #20ad95;">Education</h6>
+
+          <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3">
+        <div class="inner">
+        <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team03.jpg" class="card-img-top" alt="Image 4"></div>
+        <div class="card-body">
+          <h5 class="card-title">loan Drozd</h5>
+          <h6 class="card-title" style="color: #20ad95;">Coaching</h6>
+
+          <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------------------------------end---------------------------------------------------------------->
+
+<!---------------------------------------------------------------img inside corousel---0000-------------------------------------------------------------------------------->
+
+
+<div class=""><!--containerfluid removed to fic right to left-->
+  <div class="card">
+    <img src="image\backgroundslider.jpg" class="card-img" alt="demo" style="width: 110%;" >
+    <div class="card-img-overlay">
+      <div class="card-body text-light"><br><br>
+        <br><br><br>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="width: 40%;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image\carousel1 (1).png" class="d-block w-100" alt="Image 1" style="height: 10%; width: 5%;">
+        </div>
+        <div class="carousel-item">
+          <img src="image\carousel1 (2).png" class="d-block w-100" alt="Image 2"style="height: 10%; width: 5%;">
+        </div>
+        <div class="carousel-item">
+          <img src="image\carousel1 (1).png" class="d-block w-100" alt="Image 3" style="height: 10%; width: 5%;" >
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+    </div>
+    </div>
+  </div>
+ </div> <br>
+<!----------------------------------------------------------------end -------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------- Explore Recent News--------animation_added_css_inner----------------------------------------------------------------------->
+
+
+<div class="container mt-5">
+<p class="text-center fw-bolder" style="font-size: 30px; line-height: 35px; color: #343a40;;">Explore Recent News</p>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+<div class="inner">
+<img src="image\explore recent1.jpg" alt="" class="card-img-top">
+</div>
+<div class="card-body">
+
+  
+  
+  <div class="d-flex justify-content-center">
+    <div class="me-5">
+      <img src="image\calender.svg" alt="" style="width: 20%;">
+      may 5</div>
+    <div class="me-5">
+      <img src="image\user.svg" alt="" style="width: 20%;">
+      
+      Drozd</div>
+    <div class="me-5"> 
+      <img src="image\message-circle.svg" alt="" style="width: 20%;">
+      
+      17078</div>
+  </div><br>
+  <h5 class="fw-bold" style="font-size:150%;">We provide exclusive git <br> coaching courses</h5>
+</div>
+</div>
+</div>
+
+
+
+<div class="col-sm-4">
+  <div class="card">
+    <div class="inner">
+<img src="image\explore recent 2.jpg" alt="" class="card-img-top">
+</div>
+<div class="card-body">
+  <div class="d-flex justify-content-center">
+    <div class="me-5">
+      <img src="image\calender.svg" alt="" style="width: 20%;">
+      may 5</div>
+    <div class="me-5">
+      <img src="image\user.svg" alt="" style="width: 20%;">
+      
+      Drozd</div>
+    <div class="me-5"> 
+      <img src="image\message-circle.svg" alt="" style="width: 20%;">
+      
+      17078</div>
+  </div><br>
+<h5 class="fw-bold"style="font-size:150%;" >We provide exclusive git  <br>coaching courses</h5>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+  <div class="card">
+    <div class="inner">
+<img src="image\explore relevant3.jpg" alt="" class="card-img-top">
+</div>
+<div class="card-body">
+  <div class="d-flex justify-content-center">
+    <div class="me-5">
+      <img src="image\calender.svg" alt="" style="width: 20%;">
+      may 5</div>
+    <div class="me-5">
+      <img src="image\user.svg" alt="" style="width: 20%;">
+      
+      Drozd</div>
+    <div class="me-5"> 
+      <img src="image\message-circle.svg" alt="" style="width: 20%;">
+      
+      17078</div>
+  </div><br>
+<h5 class="fw-bold" style="font-size:150%;" > We provide exclusive git <br> coaching courses</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!----------------------------------------------------------------end -------------------------------------------------------------------------------->
+
+
+
+<!----------------------------------------------------------------EMAIL-------------------------------------------------------------------------------->
+<div class=""><!--containerfluid removed to fic right to left-->
+  <div class="card">
+    <img src="image\mail.png" class="card-img" alt="demo" >
+    <div class="card-img-overlay">
+      <div class="card-body text-light"><br><br>
+        <br><br><br>
+        <p class="text-center fw-bold " style="color: #403b66; font-size: 36px; line-height: 1.2; text-transform: capitalize;"> Sign Up For Our Newsletter</p>
+        <p class="fw-light text-center" style="color: #5f5f5f;  font-size: 18px;">He found himself transformed in his bed into a horrible vermin.</p>
+       <center>
+        <div class="input-group  " style="width:40% ;">
+          <input type="text" class="form-control" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2" style="background-color: #20ad95;"> <strong style="color: aliceblue;">Sign up</strong>
+          </span>
+        </div>
+      </center> 
+      </div>
+    </div>
+  </div>
+ </div> 
+<!----------------------------------------------------------------end -------------------------------------------------------------------------------->
+
+<footer>
+
+    <div class="container-fluid  text-light p-5 " style="background-color:#000;">
+      <div class="row align-items-start">
+        <div class="col">
+      <img src="image\logofooter.png" alt="">
+
+    <div class="footer-text mt-4">
+    <p>We build powerful and easy to use WordPress Themes, sell high quality coaching courses online.</p>
+    </div>
+ <div class="grid text-center">
+  <div><i class="fa-brands fa-facebook"></i> </div>
+  <div><i class="fa-brands fa-pinterest"></i> </div>
+  <div><i class="fa-brands fa-square-instagram"></i> </div>
+  <div><i class="fa-brands fa-linkedin"></i> </div>
+  <div><i class="fa-brands fa-youtube"></i> </div>
+
+ </div>
+
+        </div>
+  
+        <div class="col">
+          <strong>  Explore Courses <br><br></strong>
+         <a href="#">
+          <a href="#" class="text-white text"> 
+          <p class="text-light" style="text-decoration: none;">Become a Teacher</p>
+        </a>
+          <a href="#" class="text-white text">
+          <p class="text-light" style="text-decoration: none;">Home Coaching</p></a>
+          <a href="#" class="text-white text">
+          <p class="text-light" style="text-decoration: none;">Language School</p></a>
+          <a href="#" class="text-white text"></a>
+          <p class="text-light" style="text-decoration: none;">Let’s work together</p></a>
+          <p class="text-light" style="text-decoration: none;">Contact</p>
+   
+        </div>
+  
+        <div class="col">
+        <strong>Company Links<br><br></strong>
+        <href="#">
+          <a href="#" class="text-white text"> 
+          <p class="text-light" style="text-decoration: none;">Booking Form</p></a>
+          <a href="#" class="text-white text">
+          <p class="text-light" style="text-decoration: none;">My account</p></a>
+          <a href="#" class="text-white text">
+          <p class="text-light" style="text-decoration: none;">Services Detail</p></a>
+          <a href="#" class="text-white text">
+          <p class="text-light" style="text-decoration: none;">Home Education</p></a>
+          <p class="text-light" style="text-decoration: none;">Blog 3 Column</p>
+          <p class="text-light" style="text-decoration: none;">Courses Style 2</p>
+      
+        </div>
+
+        <div class="col">
+        <strong> Contact us <br><br></strong>
+            <p class="text-light" style="text-decoration: none;"> <img src="image\map-pin.svg" alt="">No.123 Chalingt Gates, Supper market New York</p>
+       
+            <p class="text-light" style="text-decoration: none;"> <img src="image\mail (1).svg" alt=""> support@gmail.com</p>
+          
+            <p class="text-light" style="text-decoration: none;"> <img src="image\phone.svg" alt="">+012 (4567) 789</p>              
+          </div>
+          </div>
+          <strong></strong> <li style="color: #2874f0;"><hr class="divider"></li></strong>
+
+
+
+          <div class="row">
+          <div class="col-sm-6">
+            <h6>Copyright © 2020 Vultur Designed by ThemeIoan. All Rights Reserved</h6>
+          </div>
+          <div class="col-sm-6  text-end">
+
+            <div class="d-flex justify-content-center">
+              <div class="me-3">
+
+                News</div>
+              <div class="me-3">
+                
+                
+                Careers</div>
+              <div class="me-3"> 
+                Services</div>
+                
+            </div>
+          </div>
+          </div>
+  </footer>
+
+
+
+
+
+
+
+
+</body>
+        </html>
