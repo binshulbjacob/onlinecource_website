@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+          <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+          <title>Bootstrap Example</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+       <title>portfolio</title>
+       <link rel="stylesheet" href="exercise2.css">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+      <script>
+        AOS.init();
+      </script>
+      <!------NABAR------->
+      <nav class="navbar navbar-expand-lg sticky-top " style="background-color: white;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://vultur.drozd.at/wp-content/uploads/2020/05/logo.png" alt="" style="width:75%">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="input-group mb-3" style="width: 350px;">
+            <input type="text" class="form-control" placeholder="Search cources..." aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-success" type="button" id="button-addon2">
+              <img src="image\search (1).svg" alt="">
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">           
+              <li class="nav-item dropdown ms-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <strong>Home</strong>   
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Home Main</a></li>
+                  <li><a class="dropdown-item" href="#">Training School</a></li>
+                  <li><a class="dropdown-item" href="#">Home Business</a></li>
+                  <li><a class="dropdown-item" href="#">Online Tutor</a></li>
+                  <li><a class="dropdown-item" href="#">Fitness Coach</a></li>
+                  <li><a class="dropdown-item" href="#">Home Education</a></li>
+                  <li><a class="dropdown-item" href="#">Home Personal</a></li>
+                  <li><a class="dropdown-item" href="#">Home Courses</a></li>
+                  <li><a class="dropdown-item" href="#">Home Mentor</a></li>
+                  <li><a class="dropdown-item" href="#">Language School</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-3 ms-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong> Pages</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About</a></li>
+                  <li><a class="dropdown-item" href="#">About us</a></li>               
+                  <li><a class="dropdown-item" href="#">Start Here 1</a></li>
+                  <li><a class="dropdown-item" href="#">Start Here 2 </a></li>
+                  <li><a class="dropdown-item" href="#">Start Here 3</a></li>                                            
+                </ul>
+              </li>              
+              <li class="nav-item dropdown mx-3 ms-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong>  Cources</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cources Grid</a></li>
+                  <li><a class="dropdown-item" href="#">Cources Style 2 </a></li>   
+                  <li><a class="dropdown-item" href="#">Cources Style 3</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Teacher Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Single Paid Cources</a></li>
+                  <li><a class="dropdown-item" href="#">Single Free Cources</a></li>
+                  <li><a class="dropdown-item" href="#">Become a Teacher</a></li>
+                </ul>
+              </li>             
+              <li class="nav-item dropdown mx-3 ms-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong> Blog</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog Main</a></li>
+                  <li><a class="dropdown-item" href="#">Blog 2 Column</a></li>                      
+                  <li><a class="dropdown-item" href="#">Blog 3 Column</a></li>                      
+                  <li><a class="dropdown-item" href="#">Blog Layout 2</a></li>                      
+                  <li><a class="dropdown-item" href="#">Blog Classic</a></li>                      
+                  <li><a class="dropdown-item" href="#">Blog Detail</a></li>                      
+                
+                </ul>
+              </li>             
+              <li class="nav-item dropdown mx-3 ms-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong>  Shop</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Shop</a></li>
+                  <li><a class="dropdown-item" href="#">Cart</a></li>
+                  <li><a class="dropdown-item" href="#">My account</a></li>
+                  <li><a class="dropdown-item" href="#">Checkout</a></li>                   
+                </ul>
+              </li>             
+              <li class="nav-item dropdown mx-3 ms-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong>  Contact </strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  <li><a class="dropdown-item" href="#">Contact 2</a></li>                      
+                  <li><a class="dropdown-item" href="#">Contact 3</a></li>
+                  <li><a class="dropdown-item" href="#">Contact 4</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-3 ">
+                <a class="mx-3 position-relative" href="#" type="button"  data-toggle="dropdown">
+                  <i class="fa-solid fa-bag-shopping fa-xl" style="color: black;"></i>
+                  <span class="fw-bold position-absolute badge rounded-circle top-100 start-100 translate-middle" style="background-color: #20ad95;">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-----EDUCATION------>
+     
+     <div class="bg-image  justify-content-center text-center p-5 d-flex img-fluid" style="background-image: url(https://vultur.drozd.at/wp-content/uploads/2019/12/about-global.jpg); background-size: cover;">
+      <div class="text-white text-center pb-5 mb-5 pt-5 ">
+        <h5 class="fw-medium text-centerm pt-5 mt-5">ONLINE COACHING LESSONS</h5>
+        <h1 class="fw-bolder text-center mb-5 px-5 " style="font-size: 50px; ">Education for Everyone</h1>
+      </div>
+     </div>
+    <!--------------------->
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-4">
+        <div class="card  border-0 rounded-0">
+          <div style="width: 65px;height: 65px; border-radius: 100px;background-color: #20ad95;" class="pt-2">
+          <i class="fa fa-desktop mt-2 m-2 " style="color: white; font-size: 40px;"></i>
+      </div>
+       <h3 class="fw-bold">Experience Design</h3>
+       <P class="text-muted ">Business Consultancy International is your the gateway to a successful in the future in online business, change your life today</P>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card  border-0 rounded-0">
+          <div style="width: 65px;height: 65px; border-radius: 100px;background-color: #20ad95;" class="pt-2">
+            <i class="fa fa-university mt-2 m-2 " style="color: white; font-size: 40px;"></i>
+        </div>
+       <h3 class="fw-bold">Product Course</h3>
+       <P class="text-muted">Business Consultancy International is your the gateway to a successful in the future in online business, change your life today.</P>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card border-0 rounded-0">
+          <div style="width: 65px;height: 65px; border-radius: 100px;background-color: #20ad95;" class="pt-2">
+            <i class="fa fa-group mt-2 m-2 " style="color: white; font-size: 40px;"></i>
+        </div>
+          <h3 class="fw-bold">Content Engineering</h3>
+          <p class="text-muted">Business Consultancy International is your the gateway to a successful in the future in online business, change your life today.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="card  border-0 rounded-0">
+            <div style="width: 65px;height: 65px; border-radius: 100px;background-color: #20ad95;" class="pt-2">
+              <i class="fa fa-university mt-2 m-2 " style="color: white; font-size: 40px;"></i>
+          </div>
+         <h3 class="fw-bold">Coaching Course</h3>
+         <P class="text-muted">Business Consultancy International is your the gateway to a successful in the future in online business, change your life today</P>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card  border-0 rounded-0">
+            <div style="width: 65px;height: 65px; border-radius: 100px;background-color: #20ad95;" class="pt-2">
+              <i class="fa fa-group mt-2 m-2 " style="color: white; font-size: 40px;"></i>
+          </div>
+         <h3 class="fw-bold">Content Engineering</h3>
+         <P class="text-muted">Business Consultancy International is your the gateway to a successful in the future in online business, change your life today</P>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 rounded-0">
+            <div style="width: 65px;height: 65px; border-radius: 100px;background-color: #20ad95;" class="pt-2">
+              <i class="fa fa-desktop mt-2 m-2 " style="color: white; font-size: 40px;"></i>
+          </div>
+            <h3 class="fw-bold">Experience Design</h3>
+            <p class="text-muted">Business Consultancy International is your the gateway to a successful in the future in online business, change your life today</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!---------------->
+<div class="section-title text-center pt-5">
+  <h1 class="text-center fw-bold" style="color: #403b66;;">Upgrade Your Skills & Transform Brands</h1>
+  <p class="text-muted text-center w-40 ">Learn from any location in the world. Study at a time and place that suits your <br> schedule Take complete control over your education Upgrade Your Skills.</p>
+</div>
+       <div class="container bg-white">
+        <div class="row">
+          <div class="col-7">
+            <img src="https://vultur.drozd.at/wp-content/uploads/2019/11/about.png" alt="" class="img-fluid" style="width: 75%;">
+          </div>
+          <div class="col-5 mt-5">
+            <h5 class="fw-bold " style="color: #403b66;">01. Purchase Extend Licence of this Product?</h5>
+            <p class="text-muted text-x1-end">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast behind the word mountains.</p>
+       
+            <h5 class="fw-bold" style="color: #403b66;">02. How browsing and membership works?</h5>
+            <p class="text-muted text-x1-end">Behind the word mountains, far from the countries Vokalia and Conson, there live the blind texts. Separated they live in Bookmarksgrove right at the coast behind the word mountains.</p>
+       
+            <h5 class="fw-bold" style="color: #403b66;">03. How to Manage your Own Dashboard?</h5>
+            <p class="text-muted text-x1-end">Separated they Behind the word mountains, far from the countries Vokalia and onantia, there live the blind texts</p>
+          </div>
+        </div>
+       </div>
+ <!----------------> 
+<!----------------->
+<div class="container mt-5 bg-white">
+  <div class="row">
+    <div class="col-5">
+      <h5 class="fw-bold" style="color: #403b66; font-size: 20px; margin-top: 20px;">Purchase Extend Licence of this Product?</h5>
+      <p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast behind the word mountains</p>
+
+      <h5 class="fw-bold" style="color: #403b66; font-size: 20px; margin-top: 20px;">How browsing and membership works?</h5>
+      <p class="text-muted">Behind the word mountains, far from the countries Vokalia and Conson, there live the blind texts. Separated they live in Bookmarksgrove right at the coast behind the word mountains.</p>
+
+      <h5 class="fw-bold" style="color: #403b66; font-size: 20px; margin-top: 20px;">How to Manage your Own Dashboard?</h5>
+      <p class="text-muted">Separated they Behind the word mountains, far from the countries Vokalia and onantia, there live the blind texts.</p>
+    </div>
+    <div class="col-7">
+      <img src="https://vultur.drozd.at/wp-content/uploads/2019/11/illustrator3.png" class="img-fluid" alt="">
+    </div>
+  </div>
+</div>
+<!---------------->
+<div class="bg-img  justify-content-center  p-5 my-5" style="background-image: url(https://vultur.drozd.at/wp-content/uploads/2020/05/newsletter-elegant.jpg); background-size: cover;">
+  <div class="text-center text-light pb-5 pt-5">
+    <h1 class="fw-bold text-center pt-5" style="font-size:50px;">Vultur Is Premium Theme</h1><br>
+    <p class="fw-bold pb-4 ">Create an account now and earn up to $25 in learning credits</p><br>
+    <button class="btn btn-lg text-white" style="background-color: #20ad95;">Buy Vultur Theme<i class="fas fa-arrow-right ps-2"></i></button>
+  </div>
+</div>
+<!-------------->
+<div class="container pt-5 py-2 pb-5">
+  <div class="row">
+    <div class="col-6">
+      <h6 class="text-muted">LEARN SOMETHING NEW</h6>
+      <h1 class="fw-bolder" style="color:#403b66 ;">Learn from any location in the world with Vultur Edu</h1>
+      <p class="text-muted ">Duis consectetur feugiat auctor. Morbi nec enim luctus, feugiat <br> arcu id, ultricies ante. Duis vel massa eleifend, porta est non.</p>
+    </div>
+    <div class="col-6">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="fw-bold" style="color: #403b66;">647</h1>
+          <p>P R O G R A M A W A R D S</p>
+        </div>
+        <div class="col-6">
+          <h1 class="fw-bold" style="color: #403b66;">369</h1>
+          <p>C E R T I F I E D T E A C H E R</p>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h1 class="fw-bold" style="color: #403b66;">746</h1>
+            <p>S T U D E N T   ENTROLLED</p>
+          </div>
+          <div class="col-6">
+            <h1 class="fw-bold" style="color: #403b66;">369</h1>
+            <p>C O M P L E T E   C O U R C E</p>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------->
+<div class="bg-img  bg-light text-center pt-5 p-5 " style="background-image: url(https://vultur.drozd.at/wp-content/uploads/2020/05/newsletter-shape.png); background-size: cover;">
+    <h1 class="fw-bold" style="color: #403b66;">Sign Up For Our Newsletter</h1>
+    <p class="text-muted">He found himself transformed in his bed into a horrible vermin.</p>
+    <form class="w-50 py-5 mx-auto" role="">
+      <div class="input-group ">
+          <input type="search" class="form-control form-control-lg border-0" style="box-shadow: none;" placeholder="Your email address">
+          <button class="px-4 border-0 btn text-white" style="background-color: #20ad95;">Sign up</button>
+      </div>
+    </form>
+</div> 
+<!-------->
+<footer class="container-fluid bg-dark py-4">
+  <div class="row px-2">
+      <div class="col-md-3 text-white text-md-left mt-2">
+          <a href="#" class="navbar-brand text-white h5">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2020/05/logo-footer.png">
+          </a>
+          <p class="text-white">We build powerful and easy to use WordPress Themes, sell high quality coaching courses online.</p>
+          <i class="fa-brands fa-square-facebook fa-xl me-3"></i>
+          <i class="fa-brands fa-pinterest-p fa-xl me-3"></i>
+          <i class="fa-brands fa-instagram fa-xl me-3"></i>
+          <i class="fa-brands fa-linkedin-in fa-xl me-3"></i>
+          <i class="fa-brands fa-youtube fa-xl me-3"></i>
+       </div>
+      <div class="col-md-3 text-white text-md-left mt-2">
+          <h5 class="fw-bold mb-3">Explore Courses</h1>
+          <ul class="list-unstyled text-white text-decoration-none">
+              <li><a href="#" class="text-white text-decoration-none">Become a Teacher</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Home Coaching</a></li>
+              <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Language School</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Let’s work together</a></li>
+          </ul>
+      </div>
+      <div class="col-md-3 text-md-left text-white mt-2">
+          <h5 class="fw-bold mb-3">Company Links</h5>
+          <ul class="list-unstyled text-white text-decoration-none">
+              <li><a href="#" class="text-white text-decoration-none">Booking Form</a></li>
+              <li><a href="#" class="text-white text-decoration-none">My account</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Services Detail</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Home Education</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Blog 3 Column</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Courses Style 2</a></li>
+          </ul>
+      </div>
+      <div class="col-md-3">
+          <h5 class="fw-bold mb-3 text-white py-2">Contact us</h5>
+          <table>
+              <tr>
+                  <td><i class="fas fa-map-marker-alt mx-3" style="color: #20ad95;"></i></td>
+               <td><p class="text-white mb-0">Address: 123 Main Street, New York, NY 10001</p></td>
+              </tr>
+              <tr>
+                  <td><i class="far fa-envelope-open  mx-3" style="color: #20ad95;"></i></td>
+                  <td><p class="text-white mb-0">Email: info@vultur.com</p></td>
+              </tr>
+              <tr>
+                  <td><i class="fas fa-phone  mx-3" style="color: #20ad95;"></i></td>
+                  <td><p class="text-white mb-0">Phone: +1 (800) 123-4567</p></td>
+              </tr>
+          </table>
+      </div>
+  </div>
+</footer>
+<footer class="container-fluid bg-dark text-white">
+  <div class="row">
+      <div class="col-9">
+          <p>Copyright © 2020 Vultur Designed by ThemeIoan. All Rights Reserved</p>
+      </div>
+      <div class="col">
+          <p>News</p>
+      </div>
+      <div class="col">
+          <p>Careers</p>
+      </div>
+      <div class="col">
+          <p>Services</p>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+<div class="card-img-overlay d-flex align-items-center justify-content-center">
+  <h3> <div style="width: 65px;height: 65px;border-radius: 100px;background-color:re;"
+          class="mx-auto">
+          <i class="fa fa-desktop mt-3"></i>
+      </div><br>Creative</h3>
+</div>
+
+
+</body>
+</html>
